@@ -4,6 +4,7 @@
     "name": "ClosReplace",
     "author": "nytpu",
     "version": "0.0.1",
+    "version_name": "0.0.1a",
     "description": "Alpha! Bolds all instances of Clos in a webpage",
 
     "homepage_url": "https://github.com/RAND-bytes/ClosReplace",
