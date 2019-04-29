@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to ClosReplace!</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Thank you for installing <strong>Clos</strong>Replace!</h1>
+    <h3>Please feel free to configure settings below. To access these settings in the future, go to the `Extension Options` page in Google Chrome or the `Extension Preferences` page in Firefox</h3>
+    <h4>Please reload open tabs to see changes.</h4>
+    <form>
+      <label><strong>Clos</strong>Bold:</label>
+      <input type="radio" name="closBold" value="false"> Off</input>
+      <input type="radio" name="closBold" value="true" checked> On</input></br></br>
+
+      <label>Words to bold:</label></br>
+      <input type="text" name="boldWords" style="width:50%;" placeholder="Words in CSV list, case insensitive"></br>
+      <label>Words must be formatted as a comma separated list with no spaces. Words are case <i>in</i>sensitive.</label></br>
+
+      <hr>
+
+      <label><strong>Clos</strong>Replace:</label>
+      <input type="radio" name="closReplace" value="false" checked> Off</input>
+      <input type="radio" name="closReplace" value="true"> On</input></br></br>
+
+      <label>Words to replace:</label></br>
+      <input type="text" name="findWords" style="width:50%;" placeholder="Words in CSV list, case insensitive"></br>
+      <label>Words must be formatted as a comma separated list with no spaces. Words are case <i>in</i>sensitive.</label></br></br>
+
+      <label>Word to replace words above:</label></br>
+      <input type="text" name="replaceWord" placeholder="Single word, case sensitive"></br>
+      <label>Single word. Word <i>is</i> case sensitive.</label></br>
+
+      <hr>
+
+      <button type="submit">Save</button>
+    </form>
+    <script type="application/javascript" src="browser-polyfill.min.js"></script>
+    <script type="application/javascript" src="options.js"></script>
+  </body>
+</html>
