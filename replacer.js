@@ -3,8 +3,8 @@ let closReplace = []
 
 browser.storage.sync.get(null).then((response) => {
   if (response.closReplace) {
-    if (response.replaceWords) {
-      closReplace = response.replaceWords
+    if (response.findWords) {
+      closReplace = response.findWords
     }
     let pattern = ''
     for (let i = 0; i < closReplace.length; i++) {
@@ -12,13 +12,16 @@ browser.storage.sync.get(null).then((response) => {
       
       findAndReplaceDOMText(document.body, {
         find: pattern,
-        replace: 'Clos',
+        replace: response.replaceWord,
         preset: 'prose'
       });
     }
   }
   
   if (response.closBold) {
+    if (response.boldWords) {
+      closBold = response.boldWords
+    }
     let pattern = ''
     for (let i = 0; i < closBold.length; i++) {
       pattern =  new RegExp(closBold[i],'gi')
