@@ -3,7 +3,7 @@
   
   "name": "ClosReplace",
   "author": "nytpu",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "Beta! Bolds all instances of Clos in a webpage, can replace words with Clos.",
   
   "homepage_url": "https://github.com/RAND-bytes/ClosReplace",
@@ -15,7 +15,6 @@
   },
   
   "permissions": [
-    "tabs",
     "storage",
     "activeTab",
     "<all_urls>"
